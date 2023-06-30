@@ -93,17 +93,26 @@ f_scoringAUDITC <- function(data){
   data$AUDITC1 <- factor(data$AUDITC1
     , labels = c("0 Never", "1 Monthly or less", "2 2−4 times a month", "3 2−3 times a week", "4 4 or more times a week"))
   data$AUDITC2 <- factor(data$AUDITC2
-    , labels = c("0 1or2", "1 3or4", "2 5or6", "3 7to9", "4 10 or more"))
+    , labels = c("0 1 or 2", "1 3 or 4", "2 5 or 6", "3 7 to 9", "4 10 or more"))
   factorLabels <- c("0 Never", "1 Less than monthly", "2 Monthly", "3 Weekly", "4 Daily or almost daily")
   for(i in 3:8){
     data[, paste0("AUDITC", i)] <- factor(
       data[, paste0("AUDITC", i)]
       , labels = factorLabels[sort(unique(data[, paste0("AUDITC", i)]))+1]
     )
+  }
+  factorLabels <- c("0 No", "1 Yes, but not in the past year", "2 Yes, during the past year")
+  for(i in 9:10){
+    data[, paste0("AUDITC", i)] <- factor(
+      data[, paste0("AUDITC", i)]
+      , labels = factorLabels[sort(unique(data[, paste0("AUDITC", i)]))+1]
+    )
+  }
+  for(i in 1:10){
     Hmisc::label(data[, paste0("AUDITC", i)]) <- dsItems$Question[dsItems$Item == paste0("AUDITC", i)]
     cat(paste0("AUDITC", i), "\n")
     print(f_tableNA(data[, paste0("AUDITC", i)]))
   }
-
+  
   return(data)
 }
