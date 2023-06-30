@@ -1,0 +1,55 @@
+Item,Question
+AUDITC_1,"1.  How often do you have a drink containing alcohol? If ""Never"" skip items 2-10."
+AUDITC_2,2.  How many drinks containing alcohol do you have on a typical day when you are drinking?
+AUDITC_3,3.  How often do you have six or more drinks on one occasion?
+AUDITC_4,4.  How often during the last year have you found that you were not able to stop drinking once you had started?
+AUDITC_5,5.  How often during the last year have you failed to do what was normally expected of you because of drinking?
+AUDITC_6,6. How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session?
+AUDITC_7,7.  How often during the last year have you had a feeling of guilt or remorse after drinking?
+AUDITC_8,8.  How often during the last year have you been unable to remember what happened the night before because of your drinking?
+AUDITC_9,9.  Have you or someone else been injured because of your drinking?
+AUDITC_10,"10. Has a relative, friend, doctor, or other health care worker been concerned about your drinking or suggested you cut down?"
+dast_1,1. Have you used drugs other than those required for medical reasons?
+dast_2,2. Do you abuse more than one drug at a time?
+dast_3,3. Are you always able to stop using drugs when you want to?
+dast_4,4. Have you had “blackouts” or “flashbacks” as a result of drug use?
+dast_5,5. Do you ever feel bad or guilty about your drug use?
+dast_6,6. Does your spouse (or parent) ever complain about your involvement with drugs?
+dast_7,7. Have you neglected your family because of your use of drugs?
+dast_8,8. Have you engaged in illegal activities in order to obtain drugs?
+dast_9,9. Have you ever experienced withdrawal symptoms (felt sick) when you stopped taking drugs?
+dast_10,"10. Have you had medical problems as a result of your drug use (e.g., memory loss, hepatitis, convulsions, bleeding etc…)?"
+CUDIT_0,"Have you used any cannabis over the past 6 months? YES/NO     If YES, please answer the following questions about your cannabis use."
+CUDIT_1,1. How often do you use cannabis?
+CUDIT_2,2. How many hours were you “stoned” on a typical day when you had been using cannabis?
+CUDIT_3,3. How often during the past 6 months did you find that you were not able to stop using cannabis once you had started?
+CUDIT_4,4. How often during the past 6 months did you fail to do what was usually expected from you because of using cannabis?
+CUDIT_5,"5. How often in the past 6 months have you devoted a great deal of your time to getting, using, or recovering from cannabis?"
+CUDIT_6,6. How often in the past 6 months have you had a problem with your memory or concentration after using cannabis?
+CUDIT_7,"7. How often do you use cannabis in situations that could be physically hazardous, such as driving, operating machinery, or caring for children?"
+CUDIT_8,"8.   Have you ever thought about cutting down, or stopping, your use of cannabis?"
+smoke_1,"1. In your entire life, have you smoked at least 100 cigarettes (5 packs)?"
+smoke_2,2. Do you currently smoke cigarettes?
+smoke_3,"3. If you are a former cigarette smoker, how old were you when you quit?"
+smoke_4a,4a. How many cigarettes do you smoke per day?
+smoke_4b,4b. For how long have you used this amount? (years)
+smoke_5,"5. Chewing tobacco, snuff, dip or snus?"
+smoke_6,6. Tobacco pipe?
+smoke_7,"7. Cigars, cigarillos, or little filtered cigars"
+smoke_8,"8. Nicotine vaping (electronic cigarettes, Juul, etc.)"
+smoke_9,"9. Nicotine replacement (nicotine gum, patch, lozenges)"
+smoke_10,10. Other nicotine product
+smoke_10_desc,"10a. Describe ""other"" nicotine products you use."
+smoke_11,11. Do you smoke or use nicotine products to help you lose   weight or diet?
+smoke_12,"12. Do you avoid quitting smoking, or quitting nicotine products, for fear of gaining weight?"
+smoke_13,13. Do you smoke or use nicotine products to undo the effects of eating too much?
+smoke_14,14. Do you smoke or use nicotine products to feel less hungry?
+smoke_15,15. Do you smoke or use nicotine products to prevent overeating?
+smoke_16,"16. Over the past four weeks (28 days), on how many days have you smoked cigarettes, or used any nicotine products, as a means of controlling your shape or weight?"
+PHQ_9,9. Do you ever drink alcohol (including beer or wine)?  If you checked “NO” go to question #11.
+PHQ_10a,a. You drank alcohol even though a doctor suggested that you stop drinking because of a problem with your health.
+PHQ_10b,"b. You drank alcohol, were high from alcohol, or   hung over while you were working, going to school, or taking care of children   or other responsibilities."
+PHQ_10c,"c. You missed or were late for work, school, or other activities because you were drinking or hung over."
+PHQ_10d,d. You had a problem getting along with other people while you were drinking.
+PHQ_10e,e. You drove a car after having several drinks or after drinking too much.
+PHQ_11,"11. If you checked off any problems in this section, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
