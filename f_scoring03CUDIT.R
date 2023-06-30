@@ -20,7 +20,7 @@
 # }
 #
 # Arguments:
-#   data: the survey. Assumes items are named: CUDIT_1, CUDIT_2, etc...
+#   data: the survey. Assumes items are named: CUDIT_1, CUDIT_2, etc... 
 #
 # Details:
 #   CUDIT
@@ -41,7 +41,7 @@
 # Values:
 #   scoreCUDITTotal: Total Score for CUDIT
 #   scoreCUDITHazardous: if scoreCUDITTotal > 7
-#   scoreCUDITCannabisUseDisorder: if (demog_3 == 2 (Female) & scoreCUDITTotal > 12) | (demog_3 == 1 (Male) & scoreCUDITTotal > 14)
+#   scoreCUDITCannabisUseDisorder: if scoreCUDITTotal > 11 then 1 else 0
 #   CUDIT*: All missing values converted to 0
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Table shortcut

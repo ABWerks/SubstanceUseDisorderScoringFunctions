@@ -55,10 +55,11 @@
 # Values:
 #   scoreAUDITCTotal: Total Score for AUDITC
 #   scoreAUDITCHazardousDrinking: if scoreAUDITCTotal > 7
-#   scoreAUDITCAlcoholDependence: if (demog_3 == 2 (Female) & scoreAUDITCTotal > 12) | (demog_3 == 1 (Male) & scoreAUDITCTotal > 14)
+#   scoreAUDITCAlcoholDependence: if (SEX == "F" (Female) & scoreAUDITCTotal > 12) | (SEX == "M" (Male) & scoreAUDITCTotal > 14)
 #   AUDIT_*: All missing values converted to 0
 #   AUDIT[1,...,10]: Factors
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# Table shortcut
 f_tableNA <- function(...) 
   table(..., useNA = "ifany")
 
