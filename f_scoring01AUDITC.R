@@ -8,6 +8,7 @@
 #
 # Description:
 # Function to score the Alcohol Use Disorders Identification Test (AUDITC)
+#  https://cde.nlm.nih.gov/formView?tinyId=myWNfJaZwe
 # @article{saunders1993development,
 #   title={Development of the alcohol use disorders identification test (AUDIT): WHO collaborative project on early detection of persons with harmful alcohol consumption-II},
 #   author={Saunders, John B and Aasland, Olaf G and Babor, Thomas F and De la Fuente, Juan R and Grant, Marcus},
@@ -18,7 +19,16 @@
 #   year={1993},
 #   publisher={Wiley Online Library}
 # }
-# 
+# @article{bush1998audit,
+#   title={The AUDIT alcohol consumption questions (AUDIT-C): an effective brief screening test for problem drinking},
+#   author={Bush, Kristen and Kivlahan, Daniel R and McDonell, Mary B and Fihn, Stephan D and Bradley, Katharine A and Ambulatory Care Quality Improvement Project (ACQUIP and others},
+#   journal={Archives of internal medicine},
+#   volume={158},
+#   number={16},
+#   pages={1789--1795},
+#   year={1998},
+#   publisher={American Medical Association}
+# }
 # Arguments:
 #   data: the survey. Assumes AUDITC items are named: AUDITC_1, AUDITC_2, etc... and the survey has an item asking about Sex/Gender
 #
@@ -113,6 +123,6 @@ f_scoringAUDITC <- function(data){
     cat(paste0("AUDITC", i), "\n")
     print(f_tableNA(data[, paste0("AUDITC", i)]))
   }
-  
+
   return(data)
 }

@@ -28,6 +28,18 @@
 #   question (3) for which a “NO” answer receives 1 point and (0) for a “YES”. Add up the points and
 #   interpretations are as followed:
 #   
+# Items
+#   1. Have you used drugs other than those required for medical reasons?
+#   2. Do you abuse more than one drug at a time?
+#   3. Are you always able to stop using drugs when you want to?
+#   4. Have you had “blackouts” or “flashbacks” as a result of drug use?
+#   5. Do you ever feel bad or guilty about your drug use?
+#   6. Does your spouse (or parent) ever complain about your involvement with drugs?
+#   7. Have you neglected your family because of your use of drugs?
+#   8. Have you engaged in illegal activities in order to obtain drugs?
+#   9. Have you ever experienced withdrawal symptoms (felt sick) when you stopped taking drugs?
+#   10. Have you had medical problems as a result of your drug use (e.g., memory loss, hepatitis, convulsions, bleeding etc...)?.
+# 
 # Values:
 #   scoreDASTTotal: Total Score for DAST
 #   scoreDASTCAT:
@@ -40,6 +52,14 @@
 #   DAST_*: All missing values converted to 0
 #   DAST[1,...,10]: Factors
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# Table shortcut
+f_tableNA <- function(...) 
+  table(..., useNA = "ifany")
+
+# Items And Questions
+dsItems  <- read.csv("SUDItemsAndQuestions.csv")
+dsItems <- dsItems[grepl("^(DAST)", dsItems$Item, ignore.case = T), ]
+
 f_scoringDAST <- function(data){
   varsDAST <- paste('DAST', 1:10, sep = '_')
   
